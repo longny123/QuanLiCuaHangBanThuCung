@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PetStoreDataSet" targetNamespace="http://tempuri.org/PetStoreDataSet.xsd" xmlns:mstns="http://tempuri.org/PetStoreDataSet.xsd" xmlns="http://tempuri.org/PetStoreDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PetStoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PetStoreConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BaiTapGiuaKiMonKiemThu.Properties.Settings.GlobalReference.Default.PetStoreConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HangHoaTableAdapter" GeneratorDataComponentClassName="HangHoaTableAdapter" Name="HangHoa" UserDataComponentName="HangHoaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PetStoreConnectionString (Settings)" DbObjectName="PetStore.dbo.HangHoa" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TenHH FROM dbo.HangHoa</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TenHH" DataSetColumn="TenHH" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PetStoreDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PetStoreDataSet" msprop:Generator_UserDSName="PetStoreDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HangHoa" msprop:Generator_TableClassName="HangHoaDataTable" msprop:Generator_TableVarName="tableHangHoa" msprop:Generator_TablePropName="HangHoa" msprop:Generator_RowDeletingName="HangHoaRowDeleting" msprop:Generator_RowChangingName="HangHoaRowChanging" msprop:Generator_RowEvHandlerName="HangHoaRowChangeEventHandler" msprop:Generator_RowDeletedName="HangHoaRowDeleted" msprop:Generator_UserTableName="HangHoa" msprop:Generator_RowChangedName="HangHoaRowChanged" msprop:Generator_RowEvArgName="HangHoaRowChangeEvent" msprop:Generator_RowClassName="HangHoaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TenHH" msprop:Generator_ColumnVarNameInTable="columnTenHH" msprop:Generator_ColumnPropNameInRow="TenHH" msprop:Generator_ColumnPropNameInTable="TenHHColumn" msprop:Generator_UserColumnName="TenHH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
